@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0e1116" />
+    <meta name="description" content="KCRHA Decision Dashboard — forensic and audit record review for the Governing Committee, King County Executive, and Office of the Mayor of Seattle." />
+    <title>KCRHA Decision Dashboard — Audit & Forensic Record</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://picsterola.github.io/kcrha-decision-dashboard/" />
+    <meta property="og:title" content="$533.9M spent, $13M unaccounted for. 9 audits. One verdict: wind KCRHA down." />
+    <meta property="og:description" content="8 State Auditor reports + 1 forensic exam. 9 reports tell one story. $533.9M, one verdict." />
+    <meta property="og:image" content="https://picsterola.github.io/kcrha-decision-dashboard/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Brass scales of justice with stacked audit envelopes — KCRHA Decision Record" />
+    <meta property="og:site_name" content="KCRHA Decision Dashboard" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://picsterola.github.io/kcrha-decision-dashboard/" />
+    <meta name="twitter:title" content="$533.9M spent, $13M unaccounted for. 9 audits. One verdict: wind KCRHA down." />
+    <meta name="twitter:description" content="8 State Auditor reports + 1 forensic exam. 9 reports tell one story." />
+    <meta name="twitter:image" content="https://picsterola.github.io/kcrha-decision-dashboard/twitter-card.png" />
+    <meta name="twitter:image:alt" content="Brass scales of justice with stacked audit envelopes — KCRHA Decision Record" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
+    <script>
+      // Pre-hydration theme bootstrap to prevent flash of incorrect theme.
+      (function () {
+        try {
+          var stored = window.localStorage.getItem("kcrha-theme");
+          var prefersLight =
+            window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: light)").matches;
+          var theme = stored === "light" || stored === "dark"
+            ? stored
+            : prefersLight
+            ? "light"
+            : "dark";
+          if (theme === "dark") {
+            document.documentElement.classList.add("dark");
+          }
+        } catch (e) {
+          // localStorage may be blocked in sandboxed iframes — default to dark
+          document.documentElement.classList.add("dark");
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="./assets/index-BduHotq9.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CtOEVf5x.css">
+  </head>
+  <body class="bg-background text-foreground">
+    <div id="root"></div>
+  </body>
+</html>
